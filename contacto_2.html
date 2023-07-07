@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pedro Mones Ruiz">
+    <meta property="og:title" content="De Cora Son Mosaiquismo">
+    <meta property="og:description" content="De Cora Son en un emprendimiento de Mosaiquismo, creado por Cora Grassetti. Se hacen productos personalizados y se dictan talleres.">
+    <meta property="og:image" content="https://de-cora-son.000webhostapp.com/imagenes/logoDecorason.png">
+    <meta property="og:image:alt" content="Logo De Cora Son">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="imagenes/icono-de-cora-son.png" sizes="32x32" type="image/png">
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <title>De Cora Son</title>
+</head>
+
+<body>
+    <div class="fondo-web"></div>
+    <header>
+
+        <!--! ******* Menu principal superior ******* -->
+
+        <nav class="barra">
+            <div class="barra-fondo"></div>
+            <div class="contenedor">
+                <a href="/index.html"><img src="imagenes/logoDecorason-1.png" alt="Logo De Cora Son"></a>
+                <label class="icon-th-list" for="menu-bar"></label>
+                <input type="checkbox" id="menu-bar">
+                <ul class="menu-barra">
+                    <li><a href="/index.html">Acerca de</a></li>
+                    <li><a href="/productos.html">Productos</a></li>
+                    <li><a href="/talleres.html">Talleres</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--! ******* Contacto por WhatsApp ******* -->
+
+        <a href="https://api.whatsapp.com/send?phone=541159534789&amp;text=¡Hola!%20Vengo%20de%20la%20pagina%20de%20De%20Cora%20Son.%20Quiero%20hacer%20una%20consulta.%20" target="_blank" class="btn-whatsApp">
+            <img src="imagenes/icon-whatsApp.png" alt="Contacto por WhatsApp">
+        </a>
+    </header>
+    <main>
+
+        <!--! ******* Agradecimientos ******* -->
+
+        <section class="presentacion-contacto">
+            <section class="acerca-de-contacto">
+                <h1>¡Gracias por ponerte en contacto con De Cora Son!</h1>
+                <p>¡Muy pronto Cori se pondrá en contacto con vos por medio del mail que ingresaste en el formulario!
+                </p>
+            </section>
+        </section>
+
+        <!--! ******* Formulario de contacto ******* -->
+
+        <section id="contacto">
+            <form class="contact_form" action="enviar.php" method="post">
+                <ul>
+                    <li>
+                        <h2 id="enviado">Formulario Enviado</h2>
+                    </li>
+                    <li>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre" maxlength="30" required>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="email@dominio.com" maxlength="40" required>
+                    </li>
+                    <li>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" cols="40" rows="6" maxlength="250"></textarea>
+                    </li>
+                    <li>
+                        <button class="submit" type="submit">Enviar</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </main>
+
+    <!--! ******* Pie de pagina ******* -->
+
+    <footer>
+        <div class="footer-contenedor">
+            <div class="barra-footer"></div>
+            <p class="copy">De Cora Son - Mosaiquismo &copy; 2023</p>
+            <div class="sociales">
+                <a href="https://www.facebook.com/decora.son.3" target="_blank">
+                    <img src="imagenes/facebook-icon.png" alt="Contacto por facebook"></a>
+                <a href="https://www.instagram.com/decorason10/" target="_blank">
+                    <img src="imagenes/instagram-icon.png" alt="Contacto por Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

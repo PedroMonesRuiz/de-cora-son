@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pedro Mones Ruiz">
+    <meta property="og:title" content="De Cora Son Mosaiquismo">
+    <meta property="og:description" content="De Cora Son en un emprendimiento de Mosaiquismo, creado por Cora Grassetti. Se hacen productos personalizados y se dictan talleres.">
+    <meta property="og:image" content="https://de-cora-son.000webhostapp.com/imagenes/logoDecorason.png">
+    <meta property="og:image:alt" content="Logo De Cora Son">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="imagenes/icono-de-cora-son.png" sizes="32x32" type="image/png">
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <title>De Cora Son</title>
+</head>
+
+<body>
+    <div class="fondo-web"></div>
+    <header>
+
+        <!--! ******* Menu principal superior ******* -->
+
+        <nav class="barra">
+            <div class="barra-fondo"></div>
+            <div class="contenedor">
+                <a href="/index.html"><img src="imagenes/logoDecorason-1.png" alt="Logo De Cora Son"></a>
+                <label class="icon-th-list" for="menu-bar"></label>
+                <input type="checkbox" id="menu-bar">
+                <ul class="menu-barra">
+                    <li><a href="/index.html">Acerca de</a></li>
+                    <li><a href="/productos.html">Productos</a></li>
+                    <li><a href="/talleres.html">Talleres</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--! ******* Contacto por WhatsApp ******* -->
+
+        <a href="https://api.whatsapp.com/send?phone=541159534789&amp;text=¡Hola!%20Vengo%20de%20la%20pagina%20de%20De%20Cora%20Son.%20Quiero%20hacer%20una%20consulta.%20"
+            target="_blank" class="btn-whatsApp">
+            <img src="imagenes/icon-whatsApp.png" alt="Contacto por WhatsApp">
+        </a>
+    </header>
+    <main>
+
+        <!--! ******* Testimonio de Cori sobre enseñar Mosaiquismo ******* -->
+
+        <section class="presentacion">
+            <div id="slider-taller" class="contenedor-taller">
+                <div class="taller-slider">
+                    <section class="slider__section-1"><img src="imagenes/campos-de-roca-10.jpg" alt="Campos de Roca"
+                            class="imagen-slider"></section>
+                    <section class="slider__section-1"><img src="imagenes/la-esperanza-06.jpg" alt="La Esperanza"
+                            class="imagen-slider"></section>
+                    <section class="slider__section-1"><img src="imagenes/el-atico-02.jpg" alt="El Ático" class="imagen-slider">
+                    </section>
+                </div>
+                <div id="btn-prev-uno">&#60;</div>
+                <div id="btn-next-uno">&#62;</div>
+            </div>
+            <div class="acerca-de acerca-de-talleres">
+                <h1>¿Qué es lo que me gusta de poder enseñar mosaiquismo?</h1>
+                <p> "Justamente todo lo que el mosaico me dio a mí, hizo que me tentara a transmitir esta experiencia y
+                    enseñar lo que sé, para que otros experimenten la misma sensación de paz, placer, relax y desenchufe
+                    absoluto de lo que te rodea, poder transmitir que sos vos y el mosaico es increíble! El reciclado de
+                    materiales, la reutilización de lo que quizás era para tirar y darle nueva vida, me maravilla.
+                    Siento
+                    alegría en mí corazón, espero cada clase con mis alumnas para disfrutar y me llena el alma cuando
+                    veo que no quieren irse, que el tiempo pasa volando y que las horas se hacen cortas. Yo tampoco
+                    quiero
+                    que se vayan! Me encanta verlas felices, reír, compartir y festejarse mutuamente. El Mosaico es lo
+                    más!"
+                </p>
+                <h4>Cora Grassetti</h4>
+            </div>
+        </section>
+
+        <!--! ******* Testimonios de alumnas de De Cora Son ******* -->
+
+        <section class="testimonios">
+            <h2>Testimonios</h2>
+            <div class="slider-testimonios">
+                <div class="slider-testimonio">
+                    <section class="testimonio slider__section_testimonio">
+                        <div class="imagen">
+                            <img src="imagenes/testimonio01.jpg" alt="">
+                        </div>
+                        <div class="texto">
+                            <p>"Cuando vamos a la clase no solo aprendemos la técnica del mosaico , se comparten
+                                experiencias ,
+                                ideas y lo más lindo que la profe te permite agregar tu toque personal en cada trabajo ,
+                                es una
+                                linda manera de desconectarte y despejarte."</p>
+                            <h4>Sofía</h4>
+                        </div>
+                    </section>
+                    <section class="testimonio slider__section_testimonio">
+                        <div class="imagen">
+                            <img src="imagenes/testimonio02.jpg" alt="">
+                        </div>
+                        <div class="texto">
+                            <p>"Cuando voy a la clase, siento que además de aprender mosaiquismo, se comparten
+                                experiencias y
+                                momento únicos con tus compañeras de clase, también creo que es un lugar donde nos
+                                distraemos, y
+                                desconectamos del mundo por un ratito."</p>
+                            <h4>Lucía</h4>
+                        </div>
+                    </section>
+                </div>
+                <div id="btn-prev-tes">&#60;</div>
+                <div id="btn-next-tes">&#62;</div>
+            </div>
+        </section>
+        <section class="navegacion-lugares">
+
+            <!--! ******* Presentación de cada taller con slider personal ******* -->
+
+            <section class="separacion-nav">
+                <!--! ******* La Esperanza ******* -->
+                <section class="listas" id="la-esperanza">
+                    <section class="talleres-lugares la-esperanza-taller">
+                        <h2>La Esperanza</h2>
+                        <div class="columnas">
+                            <div id="c-slider" class="slider-lugares">
+                                <div class="slider-la-esperanza">
+                                    <section class="slider__section-2"><img src="imagenes/la-esperanza-03.jpg"
+                                            alt="La Esperanza 1" class="imagen-slider"></section>
+                                    <section class="slider__section-2"><img src="imagenes/la-esperanza-04.jpg"
+                                            alt="La Esperanza 2" class="imagen-slider"></section>
+                                    <section class="slider__section-2"><img src="imagenes/la-esperanza-07.jpg"
+                                            alt="La Esperanza 3" class="imagen-slider"></section>
+                                </div>
+                                <div id="btn-prev-2">&#60;</div>
+                                <div id="btn-next-2">&#62;</div>
+                            </div>
+                            <div class="descripcion-lugares">
+                                <p>La Esperanza, como su nombre lo indica, es un lugar que invita a los nuevos
+                                    comienzos, es
+                                    el lugar donde Cori abrazó este hermoso arte y le dio vida a DeCoraSon, es señal de
+                                    que
+                                    los sueños siempre se cumplen. Como si fuera poco, La Esperanza es HOGAR, es casa
+                                    que cobija, recibe y abraza.
+                                    <br>
+                                    Por eso desde 2022 las puertas de La Esperanza se abrieron de par en par para
+                                    recibir a
+                                    hermosas estudiantes las cuales se animan a dejar volar toda su creatividad y
+                                    aprender
+                                    de la mano de la mejor profe, y vos… ¿qué estás esperando para ser parte de esta
+                                    gran
+                                    familia mosaiquista?.
+                                    <br>
+                                    <a href="https://api.whatsapp.com/send?phone=541159534789&amp;text=¡Hola!%20Vengo%20de%20la%20pagina%20de%20De%20Cora%20Son.%20Quiero%20consultar%20por%20los%20talleres%20en%20La%20Esperanza.%20"
+                                        target="_blank" class="enlace-whatsApp">
+                                        <h4>¿Queres saber más sobre los talleres en la esperanza? ¡Hace click acá! </h4>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!--! ******* Campos de Roca ******* -->
+                <section class="listas" id="campos">
+                    <section class="talleres-lugares campos-taller">
+                        <h2>Campos de Roca</h2>
+                        <div class="columnas">
+                            <div id="c-slider" class="slider-lugares">
+                                <div class="slider-campos">
+                                    <section class="slider__section-3"><img src="imagenes/campos-de-roca-03.jpg"
+                                            alt="Campos de Roca 1" class="imagen-slider"></section>
+                                    <section class="slider__section-3"><img src="imagenes/campos-de-roca-06.jpg"
+                                            alt="Campos de Roca 2" class="imagen-slider"></section>
+                                    <section class="slider__section-3"><img src="imagenes/campos-de-roca-09.jpg"
+                                            alt="Campos de Roca 3" class="imagen-slider"></section>
+                                </div>
+                                <div id="btn-prev-3">&#60;</div>
+                                <div id="btn-next-3">&#62;</div>
+                            </div>
+                            <div class="descripcion-lugares">
+                                <p>Campos de Roca es un barrio privado que se encuentra ubicado en la ruta 2
+                                    Km 65.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!--! ******* El Ático ******* -->
+                <section class="listas" id="el-atico">
+                    <section class="talleres-lugares El-Atico-taller">
+                        <h2>El Ático</h2>
+                        <div class="columnas">
+                            <div id="c-slider" class="slider-lugares">
+                                <div class="slider-atico">
+                                    <section class="slider__section-4"><img src="imagenes/el-atico-01.jpg"
+                                            alt="El Ático 1" class="imagen-slider"></section>
+                                    <section class="slider__section-4"><img src="imagenes/el-atico-03.jpg"
+                                            alt="El Ático 2" class="imagen-slider"></section>
+                                    <section class="slider__section-4"><img src="imagenes/el-atico-05.jpg"
+                                            alt="El Ático 3" class="imagen-slider"></section>
+                                </div>
+                                <div id="btn-prev-4">&#60;</div>
+                                <div id="btn-next-4">&#62;</div>
+                            </div>
+                            <div class="descripcion-lugares">
+                                <p>El Ático es un espacio de arte ubicado en Don Bosco, Avellaneda
+                                    en donde se dictan diferentes cursos, tanto de dibujo, pintura y en
+                                    su momento tambien de Mosaiquismo.
+                                    Si bien ya De Cora son no da cursos allí, fue el lugar donde comenzo
+                                    a darlos y donde empezo a compartir el amor por este bello arte.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+            <!--! ******* Barra de navegación lateral de los talleres ******* -->
+
+            <section class="nav-lugares">
+                <label class="icon-heart" id="tres"></label>
+                <label class="icon-heart" id="dos"></label>
+                <label class="icon-heart" for="menu-nav"></label>
+                <input type="checkbox" id="menu-nav">
+                <nav class="menu-talleres">
+                    <h2>Talleres</h2>
+                    <ul class="lista-talleres">
+                        <li><a href="talleres.html#la-esperanza">La Esperanza</a></li>
+                        <li><a href="talleres.html#campos">Campos de Roca</a></li>
+                        <li><a href="talleres.html#el-atico">El Ático</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </main>
+
+    <!--! ******* Pie de pagina ******* -->
+
+    <footer>
+        <div class="footer-contenedor">
+            <div class="barra-footer"></div>
+            <p class="copy">De Cora Son - Mosaiquismo &copy; 2023</p>
+            <div class="sociales">
+                <a href="https://www.facebook.com/decora.son.3" target="_blank">
+                    <img src="imagenes/facebook-icon.png" alt="Contacto por facebook"></a>
+                <a href="https://www.instagram.com/decorason10/" target="_blank">
+                    <img src="imagenes/instagram-icon.png" alt="Contacto por instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/slider-talleres.js"></script>
+</body>
+
+</html>
