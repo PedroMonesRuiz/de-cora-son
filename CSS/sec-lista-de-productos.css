@@ -1,0 +1,393 @@
+/* ! ******* Sección de lista de productos ******* */
+
+/* ! ******* Barra de navegación lateral de los productos ******* */
+
+/* ! ******* Contenedor principal del menu de la barra ******* */
+
+.menu-productos {
+    position: fixed;
+    display: flexbox;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding-top: 70px;
+    font-family: 'Lobster', cursive;
+    font-size: 1.7em;
+    background-color: rgba(51, 51, 51, 0.5);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    overflow-y: scroll;
+    z-index: 1000;
+}
+
+.menu-productos li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#menu-nav:checked~.menu-productos {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+
+.menu-productos::-webkit-scrollbar {
+    width: 10px
+}
+
+/* ! ******* Contenedor secundario que ajusta el tamaño del menu ******* */
+
+.contenedor-productos {
+    height: 55%;
+    padding-top: 70px;
+    position: fixed;
+    display: flexbox;
+    width: 100%;
+    top: 0;
+    overflow-y: scroll;
+}
+
+/* ! ******* Estilos de la barra de desplazamiento ******* */
+
+.contenedor-productos::-webkit-scrollbar {
+    width: 10px
+}
+
+.contenedor-productos::-webkit-scrollbar-track {
+    background-color: cadetblue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contenedor-productos::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contenedor-productos::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ! ******* Estilos de la lista del menu ******* */
+
+.lista-productos li {
+    display: block;
+    margin-left: 25px;
+    padding: 10px;
+    text-shadow: 0 0 3px #ffffff;
+    height: auto;
+}
+
+/* ! ******* Estilos de la lista principal de los productos ******* */
+
+.listas {
+    padding-top: 90px;
+}
+
+/* ! ******* Estilos generales de la lista ******* */
+
+.lista-de-productos {
+    position: relative;
+    width: 75%;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 0 4px #fff,
+        0 15px 50px;
+    border-radius: 2%;
+}
+
+/* ! ******* Estilos de la descripción de los productos ******* */
+
+.descripcion-productos {
+    text-align: center;
+}
+
+.descripcion-productos h2 {
+    margin: auto;
+}
+
+.descripcion-productos p {
+    margin: auto;
+}
+
+/* ! ******* Estilos de los Slider's de los productos ******* */
+
+.slider-productos {
+    width: 80%;
+    max-height: 21.875em;
+    max-width: 360px;
+    box-shadow: 0 0 0 4px #fff;
+    border-radius: 2%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.slider-presentacion-productos,
+.slider-mesas,
+.slider-luminarias,
+.slider-mates,
+.slider-espejos,
+.slider-cuadros,
+.slider-murales,
+.slider-bandejas,
+.slider-deco,
+.slider-jardineria,
+.slider-la-esperanza,
+.slider-campos,
+.slider-atico {
+    display: flex;
+    width: 300%;
+    overflow: hidden;
+    margin-left: -100%;
+}
+
+.slider-bandejas {
+    width: 400%;
+}
+
+.slider-mesas {
+    width: 500%;
+}
+
+.slider-jardineria,
+.slider-luminarias,
+.slider-murales,
+.slider-deco {
+    width: 600%;
+}
+
+.slider-cuadros {
+    width: 900%;
+}
+
+.slider__section-2,
+.slider__section-3,
+.slider__section-4,
+.slider__section-5,
+.slider__section-6,
+.slider__section-7,
+.slider__section-8,
+.slider__section-9,
+.slider__section-10 {
+    width: 100%;
+    height: 350px;
+}
+
+#btn-prev-2,
+#btn-next-2,
+#btn-prev-3,
+#btn-next-3,
+#btn-prev-4,
+#btn-next-4,
+#btn-prev-5,
+#btn-next-5,
+#btn-prev-6,
+#btn-next-6,
+#btn-prev-7,
+#btn-next-7,
+#btn-prev-8,
+#btn-next-8,
+#btn-prev-9,
+#btn-next-9,
+#btn-prev-10,
+#btn-next-10 {
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 1.375em;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-family: monospace;
+    line-height: 2.5em;
+    position: absolute;
+    top: 67%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#btn-prev-2:hover,
+#btn-next-2:hover,
+#btn-prev-3:hover,
+#btn-next-3:hover,
+#btn-prev-4:hover,
+#btn-next-4:hover,
+#btn-prev-5:hover,
+#btn-next-5:hover,
+#btn-prev-6:hover,
+#btn-next-6:hover,
+#btn-prev-7:hover,
+#btn-next-7:hover,
+#btn-prev-8:hover,
+#btn-next-8:hover,
+#btn-prev-9:hover,
+#btn-next-9:hover,
+#btn-prev-10:hover,
+#btn-next-10:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+#btn-prev-2,
+#btn-prev-3,
+#btn-prev-4,
+#btn-prev-5,
+#btn-prev-6,
+#btn-prev-7,
+#btn-prev-8,
+#btn-prev-9,
+#btn-prev-10{
+    left: 0.325em;
+}
+
+#btn-next-2,
+#btn-next-3,
+#btn-next-4,
+#btn-next-5,
+#btn-next-6,
+#btn-next-7,
+#btn-next-8,
+#btn-next-9,
+#btn-next-10 {
+    right: 0.325em;
+}
+
+/* ! ******* Medias Query para ajustar tamaños ******* */
+
+@media (min-width:750px) {
+    .slider-productos {
+        max-height: 19.975em;
+    }
+
+    .lista-de-productos {
+        padding: 20px 20px 0 20px;
+    }
+
+    #mesas {
+        margin-top: 0;
+    }
+
+    .descripcion-productos {
+        margin-top: 90px;
+    }
+
+    #pro-lumi, #pro-mates,
+    #pro-bandejas, #pro-deco {
+        margin-top: 50px;
+    }
+}
+
+/* ! ******* Medias Query para ajustar tamaños de la barra de navegación lateral ******* */
+
+@media (min-width:950px) {
+    .contenedor-productos {
+        text-align: left;
+        position: initial;
+        display: initial;
+        top: 0;
+    }
+
+    .contenedor-productos h2{
+        margin: auto;
+    }
+    
+    .lista {
+        display: flex;
+        position: relative;
+    }
+
+    .nav-productos {
+        position: sticky;
+        top: 15%;
+        transform: translateY(-50%);
+        width: 18%;
+        height: 100%;
+        margin-top: 80px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
+    .menu-productos {
+        width: 200px;
+        background-image: url(fondo-barra.png);
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border: 2px solid black;
+        padding: 10px;
+        margin-top: 7%;
+        left: 10px;
+        height: auto;
+        max-height: 260px;
+        transform: initial;
+        -webkit-transform: initial;
+        -moz-transform: initial;
+        -ms-transform: initial;
+        -o-transform: initial;
+    }
+
+    .menu-productos::-webkit-scrollbar {
+        width: 10px
+    }
+    
+    .menu-productos::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    
+    .menu-productos::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    
+    .menu-productos::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}

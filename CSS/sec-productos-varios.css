@@ -1,0 +1,91 @@
+/* ! ******* Sección de presentación de varios productos ******* */
+
+/* ! ******* Caracteristicas generales de la sección ******* */
+
+.productos-varios {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ! ******* Caracteristicas de los productos ******* */
+
+.productos-inicio {
+    position: relative;
+    display: block;
+    width: 350px;
+    height: 40%;
+    margin: 17px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.contenedor-producto {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 17px;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+    box-shadow: 0 0 0 2px #fff,
+        0 10px 80px;  
+    overflow: hidden;
+}
+
+.contenedor-producto img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    display: block;
+}
+
+.nombre {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.nombre h3 {
+        width: 100%;
+        padding-top: 10px;
+        height: 30px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.7);
+}
+
+.nombre h3:hover {
+    background-color: rgba(168, 167, 167, 0.7);
+    height: 40px;
+    color:rgb(227, 41, 124);
+    text-shadow: 0 0 5px #040404;
+}
+
+/* ! ******* Medias Query para ajustar tamaños ******* */
+
+@media (min-width:750px) {
+    .productos-varios {
+        padding: 0 35px 0 35px;
+    }
+    .productos-inicio{
+        padding-top: 0;
+    }
+}
+
+@media (min-width:450px) {
+    .productos-inicio {
+        width: 200px;
+    }
+
+    .contenedor-producto {
+        width: 200px;
+        height: 200px;
+    }
+}

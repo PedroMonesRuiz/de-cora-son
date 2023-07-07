@@ -1,0 +1,141 @@
+/*! ******* Estilos de la barra de navegación ******* */
+
+/*! *** Estilos generales *** */
+
+.barra {
+    position: fixed;
+    width: 100%;
+    height: 4.67em;
+    overflow: hidden;
+    z-index: 200;
+}
+
+.barra-fondo {
+    background-image: url(imagenes/fondo-barra.png);
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 4.67em;
+    opacity: 0.9;
+}
+
+#barra-fondo {
+    position: absolute;
+    width: 100%;
+    opacity: 0.8;
+}
+
+/*! *** Icono de Menu desplegable *** */
+
+.icon-th-list {
+    position: relative;
+    float: right;
+    font-size: 1.75em;
+    margin-top: 0.68em;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#menu-bar {
+    display: none;
+}
+
+#menu-bar:checked~.menu-barra {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+
+/*! ******* Barra de navegación ******* */
+
+.contenedor {
+    display: table;    
+    width: 95%;
+    margin: auto;
+    height: 100%;
+    padding-right: 5%;
+}
+
+.contenedor img {
+    position: absolute;
+    width: 210px;
+    float: left;
+    margin-left: 1.5%;
+}
+
+ul, li, a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.menu-barra {
+    position: fixed;
+    display: flexbox;
+    width: 100%;
+    height: 100%;
+    top: 2.740em;
+    font-family: 'Lobster', cursive;
+    font-size: 1.7em;
+    background-color: rgba(51, 51, 51, 0.5);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    overflow-y: scroll;
+    z-index: 100;
+}
+
+.menu-barra::-webkit-scrollbar {
+    display: none;
+  }
+
+.menu-barra a, h2 {
+    display: block;
+    margin-left: 25px;
+    padding: 10px;
+    text-shadow: 0 0 3px #ffffff;
+    height: auto;
+}
+
+.menu-barra li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ! ******* Medias Query para ajustar tamaños ******* */
+
+@media (min-width:810px) {
+    .icon-th-list {
+        display: none;
+    }
+    
+    .menu-barra {
+        position: static;
+        width: auto;
+        height: 100%;
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        float: right;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 7px;
+        background: transparent;
+        border: none;
+        overflow-y: initial;
+    }
+    .menu-barra a {
+        margin-left: 0px;
+        height: 100%;
+    }
+}

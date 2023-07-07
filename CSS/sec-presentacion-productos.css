@@ -1,0 +1,129 @@
+/* ! ******* Sección de presentación de los productos con un slider ******* */
+
+/* ! ******* Clase principal ******* */
+
+.presentacion-productos {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* ! ******* slider ******* */
+
+.pres-productos {
+    margin-top: 45px;
+    margin-bottom: 80px;
+    padding: 0;
+    width: 100%;
+}
+
+.productos-imagenes {
+    display: block;
+    width: 100%;
+    height: 21.875em;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.contenedor-slider-productos {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 26%);
+    width: 90%;
+    min-height: 21.875em;
+    max-height: 25.875em;
+    max-width: 500px;
+    opacity: 0.8;
+    margin: 30px 0 0 0;
+    box-shadow: 0 0 0 4px #fff, 0 15px 50px;
+    border-radius: 2%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+    -webkit-transform: translate(-50%, 26%);
+    -moz-transform: translate(-50%, 26%);
+    -ms-transform: translate(-50%, 26%);
+    -o-transform: translate(-50%, 26%);
+}
+
+.productos-slider {
+    display: flex;
+    width: 300%;
+    overflow: hidden;
+    margin-left: -100%;
+}
+
+.slider__section-1 {
+    width: 100%;
+}
+
+/* ! ******* Texto del Slider ******* */
+
+.informacion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.informacion h2 {
+    position: relative;
+    padding-bottom: 90px;
+    margin-top: 20px;
+}
+
+.informacion p {
+    margin: 0 20px 20px 20px;
+}
+
+/* ! ******* Medias Query para ajustar tamaños ******* */
+
+@media (min-width:750px) {
+    .presentacion-productos {
+        justify-content: center;
+        padding-top: 80px;
+    }
+
+    .pres-productos {
+        margin-bottom: 20px;
+    }
+
+    .contenedor-slider-productos {
+        position: relative;
+        width: 100%;
+        min-height: 100px;
+        max-width: 1200px;
+        max-height: 900px;
+        margin: 50px 50px 0 50px;
+        transform: translate(-55%, 5%);
+        -webkit-transform: translate(-55%, 5%);
+        -moz-transform: translate(-55%, 5%);
+        -ms-transform: translate(-55%, 5%);
+        -o-transform: translate(-55%, 5%);
+}
+
+    .informacion h2 {
+        position: relative;
+        padding-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .informacion p {
+        font-size: 20px;
+    }
+
+    .productos-imagenes {
+        height: auto;
+    }
+}

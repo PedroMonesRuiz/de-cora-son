@@ -1,0 +1,443 @@
+/* ! ******* Sección de Talleres ******* */
+
+/* ! ******* Barra de navegación lateral por la sección de talleres ******* */
+
+/* ! ******* Menu de la barra de navegación ******* */
+
+.menu-talleres {
+    position: fixed;
+    display: flexbox;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding-top: 70px;
+    font-family: 'Lobster', cursive;
+    font-size: 1.7em;
+    background-color: rgba(51, 51, 51, 0.5);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    overflow-y: scroll;
+    z-index: 988;
+}
+
+.menu-talleres::-webkit-scrollbar {
+    width: 10px;
+}
+
+.menu-talleres li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#menu-nav {
+    display: none;
+}
+
+#menu-nav:checked~.menu-talleres {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+
+/* ! ******* Estilos de la lista del menu ******* */
+
+.lista-talleres li {
+    display: block;
+    margin-left: 25px;
+    padding: 10px;
+    text-shadow: 0 0 3px #ffffff;
+    height: auto;
+}
+
+/* ! ******* Presentación de la sección de talleres ******* */
+
+/* ! ******* Testimonio de Cori con Slider ******* */
+
+.acerca-de-talleres {
+    margin-top: 140px;
+}
+
+.taller-slider{
+    position: relative;
+    display: flex;
+    width: 300%;
+    overflow: hidden;
+    margin-left: -100%;
+}
+
+.slider__section-1 {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.contenedor-taller {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 32%);
+    margin-bottom: 180px;
+    width: 85%;
+    max-height: 25.875em;
+    max-width: 420px;
+    box-shadow: 0 0 0 4px #fff, 0 15px 50px;
+    border-radius: 2%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+    -webkit-transform: translate(-50%, 32%);
+    -moz-transform: translate(-50%, 32%);
+    -ms-transform: translate(-50%, 32%);
+    -o-transform: translate(-50%, 32%);
+}
+
+#btn-prev-uno,
+#btn-next-uno {
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 1.375em;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-family: monospace;
+    line-height: 2.5em;
+    position: absolute;
+    top: 79%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#btn-prev-uno:hover,
+#btn-next-uno:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+#btn-prev-uno {
+    left: 0.325em;
+}
+
+#btn-next-uno {
+    right: 0.325em;
+}
+/* ! ******* Firmas ******* */
+h4 {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* ! ******* Testimonios de alumnas ******* */
+
+/* ! ******* Estilos generales de los testimonios ******* */
+
+.testimonios {
+    position: relative;
+    width: 100%;
+}
+
+.testimonios h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.slider-testimonios {
+    max-width: 90%;
+    background-color: rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 0 4px #fff;
+    border-radius: 2%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.slider-testimonio {
+    display: flex;
+    width: 200%;
+    overflow: hidden;
+    margin-left: -100%;
+}
+
+.slider__section_testimonio {
+    width: 100%;
+    position: relative;
+}
+
+#btn-prev-tes,
+#btn-next-tes {
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 1.375em;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-family: monospace;
+    line-height: 2.5em;
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#btn-prev-tes:hover,
+#btn-next-tes:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+#btn-prev-tes {
+    left: 0.325em;
+}
+
+#btn-next-tes {
+    right: 0.325em;
+}
+
+.testimonio {
+    padding: 20px;
+    margin: auto;
+}
+
+/* ! ******* Estilos de las imagenes ******* */
+
+.imagen {
+    text-align: center;
+}
+
+.imagen img {
+    width: 90%;
+    max-width: 350px;
+    max-height: 350px;
+    object-fit: cover;
+    box-shadow: 0 0 0 4px black;
+    border-radius: 2%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* ! ******* Estilo del texto ******* */
+
+.texto {
+    margin: 30px;
+    margin-top: 60px;
+}
+
+/* ! ******* Lista de talleres ******* */
+
+/* ! ******* Estilos generales de la lista de talleres ******* */
+
+.talleres-lugares {
+    width: 65%;
+    padding: 20px 20px 0 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 0 4px #fff,
+        0 15px 50px;
+    border-radius: 2%;
+}
+
+.columnas {
+    position: relative;
+    height: 100%;
+}
+
+/* ! ******* Estilos del texto ******* */
+
+.talleres-lugares h2 {
+    margin: auto;
+    text-align: center;
+}
+
+.talleres-lugares p {
+    padding-bottom: 20px;
+}
+
+.descripcion-lugares {
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+    position: relative;
+}
+
+/* ! ******* Estilo de los Slider's de los talleres ******* */
+
+.slider-lugares {
+    width: 70%;
+    max-height: 15.875em;
+    max-width: 300px;
+    box-shadow: 0 0 0 4px #fff;
+    border-radius: 2%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+    margin: 25px 5px 20px 5px;
+    width: 100%;
+}
+
+/* ! ******* Medias Query para ajustar tamaños ******* */
+
+@media (min-width:750px) {
+    .slider-testimonios {
+        max-width: 660px;
+    }
+
+    .contenedor-taller {
+        flex: 1;
+        margin-top: 130px;
+        left: auto;
+        transform: initial;
+        margin-left: 50px;
+        margin-bottom: 0;
+        width: 70%;
+        max-width: 350px;
+        max-height: 21.875em;
+        bottom: 30px;
+        min-height: 350px;
+        -webkit-transform: initial;
+        -moz-transform: initial;
+        -ms-transform: initial;
+        -o-transform: initial;
+    }
+
+    .acerca-de-talleres {
+        margin-top: 120px;
+    }
+
+    #btn-prev-tes,
+    #btn-next-tes {
+        top: 55%;
+    }
+
+    .testimonios {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .testimonio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-height: 250px;
+        margin-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .testimonio img {
+        max-height: 15.875em;
+        max-width: 350px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .talleres-lugares {
+        margin: initial;
+        width: 75%;
+        margin-left: 70px;
+        margin-bottom: 20px;
+    }
+
+    .talleres-lugares h2 {
+        width: 50%;
+        margin: initial;
+    }
+
+    .columnas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+/* ! ******* Medias Query para ajustar tamaños de la barra de navegación lateral de talleres ******* */
+
+@media (min-width:950px) {
+    .icon-heart {
+        display: none;
+    }
+
+    .navegacion-lugares {
+        display: flex;
+        position: relative;
+    }
+
+    .separacion-nav {
+        flex: 1;
+        height: 100%;
+        width: 80%;
+    }
+
+    .nav-lugares {
+        position: sticky;
+        top: 15%;
+        transform: translateY(-50%);
+        width: 18%;
+        height: 100%;
+        margin-top: 80px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
+    .menu-talleres {
+        width: 200px;
+        background-image: url(fondo-barra.png);
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border: 2px solid black;
+        padding: 10px;
+        margin-top: 7%;
+        right: 10px;
+        height: auto;
+        transform: initial;
+        -webkit-transform: initial;
+        -moz-transform: initial;
+        -ms-transform: initial;
+        -o-transform: initial;
+    }
+}
